@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game Page1</title>
+
+    <script src="/Login Authentication Task/login.js"></script>
+    <link rel="stylesheet" href="/Login Authentication Task/login.css">
+
+    <!-- BootStrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+</head>
+
+<body onload="captcha()" id="back">
+    <section>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-md-12 mt-3 mb-5">
+                    <h1 id="title">Login Authentication</h1>
+                    <div id="login">
+                        <h2>Login Form</h2>
+
+                        <form class="row g-3" method="post">
+                            <div class="col-md-8">
+                                <label for="fname" class="form-label">User name</label>
+                                <input type="text" class="form-control" id="fname" placeholder="User Name" value="">
+                            </div>
+
+                            <div class="col-md-8">
+                                <label for="pass2" class="form-label">Mobile Number</label>
+                                <input type="text" class="form-control" name="phoneNumber" placeholder="Enter 10 digit number" id="mobileno" required=""
+                                    pattern="[0-9]{10}">
+                            </div>
+
+                            <div class="col-md-8">
+                                <label for="pass1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="pass1" value=""
+                                    placeholder="Enter Password" maxlength="8">
+                            </div>
+
+                            <div class="col-md-8">
+                                <label for="pass2" class="form-label">Re-Enter Password</label>
+                                <input type="text" class="form-control" id="pass2" value=""
+                                    placeholder="Re-Enter Password">
+                            </div>
+            
+                            <div class="col-md-6">
+                                <input type="text" id="capch" class="form-control text-center" value="" readonly>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" id="entcapch" class="form-control" placeholder="Enter Captcha">
+                            </div>
+
+                            <div class="col-12">
+                                <a class="btn w-75" onclick="details()" id="login-btn" href="">
+                                    Login Here
+                                </a>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

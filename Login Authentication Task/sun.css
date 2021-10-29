@@ -1,0 +1,76 @@
+body{
+    height: 100%;
+    width: 100%;
+     background-color: rgb(141, 219, 243);
+ }
+ 
+ .sun{
+     height: 100px;
+     width: 100px;
+     background-color: rgb(255, 217, 0);
+     position: absolute;
+     top: 5%;
+     left: 2%;
+     border-radius: 50%;
+     box-shadow: 0px 0px 50px 20px rgb(251, 255, 0);
+ 
+     animation-name: anim;
+     animation-delay: 1s;
+     animation-direction: linear;
+     animation-duration: 10s;
+     animation-iteration-count: 1;
+ }
+
+ @keyframes anim {
+    
+     0%{
+         top: 2%;
+         left: 10%;
+     }
+     30%{
+         top: 4%;
+         left: 30%;
+     }
+     70%{
+         top: 4%;
+         left: 70%;
+         background-color: rgb(255, 189, 9);
+     }
+     100%{
+         top: 2%;
+         left: 100%;
+         background-color: rgb(250, 121, 16);
+     }
+ }
+
+ .word{
+     position: absolute;
+     top: 30%;
+     left: 20%;
+     font-size: 100px;
+     font-family: sans-serif;
+     font-weight:900;
+     color: rgba(4, 4, 105, 0.767);
+    
+     text-shadow: 10px 25px 0px rgb(105, 104, 104);
+     animation-name: shadow;
+     animation-delay: 1s;
+     animation-direction: linear;
+     animation-duration: 10s;
+     animation-iteration-count: 1;
+ }
+ 
+ @keyframes shadow {
+     0%{
+         text-shadow: -10px 25px 0px rgb(78, 77, 77);
+     }
+     30%{
+         text-shadow: -30px 20px 0px rgb(105, 104, 104);
+     }
+     70%{
+         text-shadow: -60px 25px 0px rgb(105, 104, 104);
+     }
+     100%{
+         text-shadow: -90px 25px 0px rgb(105, 104, 104);
+     }
+ }
